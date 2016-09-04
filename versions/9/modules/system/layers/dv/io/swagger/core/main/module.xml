@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.0" name="io.swagger.core">
+
+    <properties>
+        <property name="jboss.api" value="private"/>
+    </properties>
+    
+    <resources>
+        <resource-root path="swagger-jaxrs-1.5.8.jar" />
+        <resource-root path="swagger-core-1.5.8.jar" />
+        <resource-root path="swagger-annotations-1.5.8.jar" />
+        <resource-root path="swagger-models-1.5.8.jar" />
+        <resource-root path="swagger-parser-1.0.10.jar" />
+    </resources>
+    
+    <dependencies>
+        <module name="org.reflections"/>
+        <module name="javax.ws.rs.api"/>
+        <module name="javax.servlet.api"/>
+        <module name="com.fasterxml.jackson.core" />
+        <module name="com.fasterxml.jackson.dataformat"/>
+        <module name="javax.api"/>
+        <module name="javax.validation.api"/>
+        <module name="com.google.guava"/>
+        <module name="org.slf4j"/>
+        <module name="org.apache.commons.lang" slot="3.3.2"/>
+        <module name="javax.xml.bind.api"/>
+    </dependencies>
+</module>    
